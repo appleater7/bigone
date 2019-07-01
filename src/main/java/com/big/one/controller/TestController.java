@@ -9,6 +9,7 @@ public class TestController {
 	
 	@RequestMapping("/test")
 	public String gogogogo() {
+		System.out.print("close 해줘");
 		return "home";
 	}
 }
