@@ -18,6 +18,7 @@ public class TestController {
 		System.out.print("Fixed 해줘");
 		System.out.print("굿!");
 		System.err.print("굿~");
+		System.out.println("이것은 이슈 추가용");
 	}
 	
 }
