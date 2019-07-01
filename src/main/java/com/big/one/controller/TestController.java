@@ -17,7 +17,7 @@ public class TestController {
 	public static void main(String[] args) {
 		System.out.print("Fixed 해줘");
 		System.out.print("굿!");
-		System.err.print("굿");
+		System.err.print("굿~");
 	}
 	
 }
