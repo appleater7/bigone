@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2019-07-02 14:07:11</creation_date>
-			<updated_date>2019-07-02 18:22:39</updated_date>
+			<updated_date>2019-07-03 00:48:27</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
@@ -180,8 +180,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>p_age</logical_name>
-			<physical_name>p_age</physical_name>
+			<logical_name>pp_age</logical_name>
+			<physical_name>pp_age</physical_name>
 			<type>tinyint</type>
 		</word>
 		<word>
@@ -196,8 +196,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>p_auth</logical_name>
-			<physical_name>p_auth</physical_name>
+			<logical_name>pp_auth</logical_name>
+			<physical_name>pp_auth</physical_name>
 			<type>character(n)</type>
 		</word>
 		<word>
@@ -212,8 +212,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>p_gender</logical_name>
-			<physical_name>p_gender</physical_name>
+			<logical_name>pp_gender</logical_name>
+			<physical_name>pp_gender</physical_name>
 			<type>character(n)</type>
 		</word>
 		<word>
@@ -228,8 +228,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>p_name</logical_name>
-			<physical_name>p_name</physical_name>
+			<logical_name>pp_name</logical_name>
+			<physical_name>pp_name</physical_name>
 			<type>varchar(n)</type>
 		</word>
 		<word>
@@ -244,8 +244,8 @@
 			<args></args>
 			<char_semantics>false</char_semantics>
 			<description></description>
-			<logical_name>p_num</logical_name>
-			<physical_name>p_num</physical_name>
+			<logical_name>pp_num</logical_name>
+			<physical_name>pp_num</physical_name>
 			<type>decimal(p)</type>
 		</word>
 	</dictionary>
@@ -455,7 +455,7 @@
 	</test_data_list>
 	<sequence_set>
 		<sequence>
-			<name>SEQ_people_p_num</name>
+			<name>SEQ_people_pp_num</name>
 			<schema></schema>
 			<increment>1</increment>
 			<min_value></min_value>
@@ -471,12 +471,6 @@
 		</sequence>
 	</sequence_set>
 	<trigger_set>
-		<trigger>
-			<name>TRI_people_p_num</name>
-			<schema></schema>
-			<sql>BEFORE INSERT ON people&#x0D;&#x0A;FOR EACH ROW&#x0D;&#x0A;BEGIN&#x0D;&#x0A;&#x09;SELECT SEQ_people_p_num.nextval&#x0D;&#x0A;&#x09;INTO :new.p_num&#x0D;&#x0A;&#x09;FROM dual;&#x0D;&#x0A;END</sql>
-			<description></description>
-		</trigger>
 	</trigger_set>
 	<change_tracking_list>
 	</change_tracking_list>

@@ -1,13 +1,10 @@
-package com.big.one.mapper;
+package com.big.one.service;
 
 import java.util.List;
 
-import org.mybatis.spring.annotation.MapperScan;
-
 import com.big.one.vo.PeopleVO;
 
-@MapperScan
-public interface PeopleMapper {
+public interface PeopleService {
 
 	public List<PeopleVO> selectPeopleList(PeopleVO people);
 }

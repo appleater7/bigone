@@ -1,10 +1,4 @@
 
-/* Drop Triggers */
-
-DROP TRIGGER TRI_people_p_num;
-
-
-
 /* Drop Tables */
 
 DROP TABLE people CASCADE CONSTRAINTS;
@@ -13,14 +7,14 @@ DROP TABLE people CASCADE CONSTRAINTS;
 
 /* Drop Sequences */
 
-DROP SEQUENCE SEQ_people_p_num;
+DROP SEQUENCE SEQ_people_pp_num;
 
 
 
 
 /* Create Sequences */
 
-CREATE SEQUENCE SEQ_people_p_num INCREMENT BY 1 START WITH 1;
+CREATE SEQUENCE SEQ_people_pp_num INCREMENT BY 1 START WITH 1;
 
 
 
@@ -28,10 +22,13 @@ CREATE SEQUENCE SEQ_people_p_num INCREMENT BY 1 START WITH 1;
 
 CREATE TABLE people
 (
-	p_num number(8) NOT NULL,
-	p_name varchar2(300) NOT NULL,
-	p_age number(3,0) NOT NULL,
-	p_gender char(1) NOT NULL,
-	p_auth char(3) DEFAULT '000',
-	PRIMARY KEY (p_num)
+	pp_num number(8) NOT NULL,
+	pp_name varchar2(300) NOT NULL,
+	pp_age number(3,0) NOT NULL,
+	pp_gender char(1) NOT NULL,
+	pp_auth char(3),
+	PRIMARY KEY (pp_num)
 );
+
+
+

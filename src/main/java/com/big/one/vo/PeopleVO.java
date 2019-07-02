@@ -1,11 +1,16 @@
 package com.big.one.vo;
 
+import org.apache.ibatis.type.Alias;
+
 import lombok.Data;
 
+@Alias("people")
 @Data
 public class PeopleVO {
-
-	private String name;
-	private Integer age;
-	private Integer gender;
+	
+	private Integer ppNum;
+	private String ppName;
+	private Integer ppAge;
+	private Integer ppGender;
+	private String ppAuth;
 }
