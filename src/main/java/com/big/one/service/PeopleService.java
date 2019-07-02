@@ -7,4 +7,5 @@ import com.big.one.vo.PeopleVO;
 public interface PeopleService {
 
 	public List<PeopleVO> selectPeopleList(PeopleVO people);
+	public int insertPeople(PeopleVO people);
 }

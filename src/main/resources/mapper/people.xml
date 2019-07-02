@@ -6,4 +6,20 @@
 	<select id="selectPeopleList" resultType="people">
 		select * from people
 	</select>
+	<insert id="insertPeople">
+		insert into people(
+		pp_num,
+		pp_name,
+		pp_age,
+		pp_gender,
+		pp_auth
+		)
+		values(
+		seq_people_pp_num.nextval,
+		#{ppName},
+		#{ppAge},
+		#{ppGender},
+		#{ppAuth}
+		)
+	</insert>
 </mapper>

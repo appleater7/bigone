@@ -10,4 +10,5 @@ import com.big.one.vo.PeopleVO;
 public interface PeopleMapper {
 
 	public List<PeopleVO> selectPeopleList(PeopleVO people);
+	public int insertPeople(PeopleVO people);
 }

@@ -21,4 +21,9 @@ public class PeopleServiceImpl implements PeopleService {
 		return pm.selectPeopleList(people);
 	}
 
+	@Override
+	public int insertPeople(PeopleVO people) {
+		return pm.insertPeople(people);
+	}
+
 }
