@@ -41,7 +41,7 @@ import lombok.Data;
 @Alias("people")
 @Data
 public class PeopleVO {
-//	@Pattern(regexp="/[0-9]", message="[ppNum error] : only num")
+	@Pattern(regexp="/[0-9]", message="[ppNum error] : only num")
 	private Integer ppNum;
 	@Pattern(regexp = "/[a-z]|[A-Z]", message="[ppName error] : only eng")
 	@NotNull(message="[ppName error] : not null")
